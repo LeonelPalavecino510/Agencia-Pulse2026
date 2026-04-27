@@ -12,12 +12,23 @@
         content="desarrollo web, diseño web, agencia digital, UX/UI, optimización web, landing page, SEO, desarrollo a medida">
     <meta name="author" content=".Pulse">
     <link rel="canonical" href="https://tudominio.com/">
+    <!-- Favicon — ícono en pestaña del navegador, Google y marcadores -->
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
     <!-- Open Graph para redes sociales -->
     <meta property="og:title" content=".Pulse | Diseño y Desarrollo Web">
     <meta property="og:description"
         content="Creamos experiencias digitales de alto impacto que combinan precisión técnica con estética editorial disruptiva.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tudominio.com/">
+    <!-- og:image: cuando hagas deploy, cambiar por la URL absoluta ej: https://tudominio.com/og-image.png -->
+    <meta property="og:image" content="og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="og-image.png">
     <!-- Fuentes y Estilos -->
     <link
         href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800;900&amp;family=Inter:wght@300;400;500;600&amp;family=Space+Grotesk:wght@300;400;500;700&amp;display=swap"
@@ -163,6 +174,7 @@
                 <a class="nav-lnk" href="#work" data-i18n="nav_work">Trabajo</a>
                 <a class="nav-lnk" href="#about" data-i18n="nav_about">Nosotros</a>
                 <a class="nav-lnk" href="#faq" data-i18n="nav_faq">Preguntas</a>
+                <a class="nav-lnk" href="#contact" data-i18n="nav_contact">Contacto</a>
             </div>
             <div class="flex items-center gap-4">
                 <!-- Social Icons (Desktop) -->
@@ -210,9 +222,9 @@
                     </div>
                 </div>
 
-                <button
+                <a href="https://wa.me/5491124698925?text=Quiero%20saber%20m%C3%A1s" target="_blank" rel="noopener noreferrer"
                     class="hidden lg:block bg-prim-box text-on-prim-box px-6 py-2 rounded-md font-head font-bold text-sm scale-95 active:scale-90 transition-transform kin-grad"
-                    data-i18n="nav_cta">Empezá ahora</button>
+                    data-i18n="nav_cta">Hablemos</a>
                 <button id="mobile-menu-btn" class="lg:hidden text-stone-400 hover:text-stone-100 focus:outline-none">
                     <span class="material-symbols-outlined text-3xl">menu</span>
                 </button>
@@ -226,6 +238,7 @@
             <a class="mobile-link mob-lnk" href="#work" data-i18n="nav_work">Trabajo</a>
             <a class="mobile-link mob-lnk" href="#about" data-i18n="nav_about">Nosotros</a>
             <a class="mobile-link mob-lnk" href="#faq" data-i18n="nav_faq">Preguntas</a>
+            <a class="mobile-link mob-lnk" href="#contact" data-i18n="nav_contact">Contacto</a>
 
             <!-- Mobile Lang Selector -->
             <div class="border-t border-out-var/20 pt-4 flex flex-col gap-3">
@@ -239,7 +252,7 @@
             </div>
 
             <div class="flex justify-center gap-6 mt-2 border-t border-out-var/20 pt-6">
-                <a href="https://www.instagram.com/agenciapulse_/" target="_blank" rel="noopener noreferrer"
+                <a href="https://www.instagram.com/agenciapulse__/" target="_blank" rel="noopener noreferrer"
                     class="text-stone-400 hover:text-primary transition-colors"><svg class="w-6 h-6" fill="currentColor"
                         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -258,9 +271,9 @@
                             d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
                     </svg></a>
             </div>
-            <button
-                class="bg-prim-box text-on-prim-box px-6 py-3 mt-4 rounded-md font-head font-bold text-sm kin-grad w-full"
-                data-i18n="nav_cta">Empezá ahora</button>
+            <a href="https://wa.me/5491124698925?text=Quiero%20saber%20m%C3%A1s" target="_blank" rel="noopener noreferrer"
+                class="bg-prim-box text-on-prim-box px-6 py-3 mt-4 rounded-md font-head font-bold text-sm kin-grad w-full text-center block"
+                data-i18n="nav_cta">Hablemos</a>
         </div>
     </nav>
 
@@ -287,13 +300,13 @@
                     disruptiva.
                 </p>
                 <div class="flex flex-col md:flex-row gap-4">
-                    <button
+                    <a href="https://wa.me/5491124698925?text=Quiero%20saber%20m%C3%A1s" target="_blank" rel="noopener noreferrer"
                         class="kin-grad text-on-prim-box px-10 py-5 rounded-md font-head font-extrabold text-lg flex items-center justify-center gap-2 group hover:shadow-[0_0_40px_rgba(255,107,0,0.3)] transition-all"
                         data-i18n="hero_cta">
-                        Empieza tu proyecto
+                        Inicia tu proyecto
                         <span
                             class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
-                    </button>
+                    </a>
                 </div>
             </div>
             <!-- Decorative Element -->
@@ -324,6 +337,11 @@
                         <div class="mb-8">
                             <span class="badge text-stone-500 block mb-2" data-i18n="tier1_name">Essential</span>
                             <h3 class="text-3xl font-head font-extrabold" data-i18n="tier1_title">Landing Page</h3>
+                            <div class="mt-4 flex items-baseline gap-2">
+                                <span class="font-head font-black text-4xl text-on-surf">$200.000</span>
+                                <span class="font-label text-xs text-on-surf-var uppercase tracking-widest">ARS</span>
+                            </div>
+                            <p class="font-label text-[10px] text-on-surf-var/60 uppercase tracking-widest mt-1">50% seña · 50% entrega</p>
                         </div>
                         <ul class="space-y-4 mb-12 flex-grow">
                             <li class="flex items-center gap-3 text-sm text-on-surf-var" data-i18n="tier1_f1"><span
@@ -344,6 +362,11 @@
                         <div class="mb-8">
                             <span class="badge block mb-2" data-i18n="tier2_name">Growth</span>
                             <h3 class="text-3xl font-head font-extrabold" data-i18n="tier2_title">Profesional</h3>
+                            <div class="mt-4 flex items-baseline gap-2">
+                                <span class="font-head font-black text-4xl text-primary">$350.000</span>
+                                <span class="font-label text-xs text-on-surf-var uppercase tracking-widest">ARS</span>
+                            </div>
+                            <p class="font-label text-[10px] text-on-surf-var/60 uppercase tracking-widest mt-1">50% seña · 50% entrega</p>
                         </div>
                         <ul class="space-y-4 mb-12 flex-grow">
                             <li class="flex items-center gap-3 text-sm" data-i18n="tier2_f1"><span
@@ -368,6 +391,11 @@
                         <div class="mb-8">
                             <span class="badge text-stone-500 block mb-2" data-i18n="tier3_name">Corporate</span>
                             <h3 class="text-3xl font-head font-extrabold" data-i18n="tier3_title">Institucional</h3>
+                            <div class="mt-4 flex items-baseline gap-2">
+                                <span class="font-head font-black text-4xl text-on-surf">$450.000</span>
+                                <span class="font-label text-xs text-on-surf-var uppercase tracking-widest">ARS</span>
+                            </div>
+                            <p class="font-label text-[10px] text-on-surf-var/60 uppercase tracking-widest mt-1">50% seña · 50% entrega</p>
                         </div>
                         <ul class="space-y-4 mb-12 flex-grow">
                             <li class="flex items-center gap-3 text-sm text-on-surf-var" data-i18n="tier3_f1"><span
@@ -627,6 +655,82 @@
                             presenciales en CABA si el cliente quiere, también colaboramos con clientes en toda Europa y
                             América.</p>
                     </details>
+                    <details
+                        class="bg-surf-low p-6 rounded-lg border-l-2 border-primary/20 hover:border-primary transition-all cursor-pointer group">
+                        <summary
+                            class="flex justify-between items-center outline-none list-none [&::-webkit-details-marker]:hidden">
+                            <h3 class="font-head font-bold text-lg" data-i18n="faq_4_q">¿Cuánto cuesta aproximadamente un sitio web?</h3>
+                            <span
+                                class="material-symbols-outlined group-open:-rotate-180 transition-transform">expand_more</span>
+                        </summary>
+                        <p class="mt-4 text-on-surf-var text-sm" data-i18n="faq_4_a">El costo varía según la complejidad del proyecto. Una Landing Page parte desde un precio accesible y los planes más completos escalan según el alcance. Lo mejor es que nos cuentes tu idea para darte una cotización personalizada sin compromiso. Escribinos por WhatsApp y te respondemos en el día.</p>
+                    </details>
+                    <details
+                        class="bg-surf-low p-6 rounded-lg border-l-2 border-primary/20 hover:border-primary transition-all cursor-pointer group">
+                        <summary
+                            class="flex justify-between items-center outline-none list-none [&::-webkit-details-marker]:hidden">
+                            <h3 class="font-head font-bold text-lg" data-i18n="faq_5_q">¿Cómo es el proceso de pago y puedo ver el avance?</h3>
+                            <span
+                                class="material-symbols-outlined group-open:-rotate-180 transition-transform">expand_more</span>
+                        </summary>
+                        <p class="mt-4 text-on-surf-var text-sm" data-i18n="faq_5_a">Trabajamos con un esquema de 50% al inicio y 50% contra entrega, para que ambas partes tengan garantías. Durante todo el proceso tenés acceso a revisiones periódicas y actualizaciones por WhatsApp. Nada se entrega sin tu aprobación.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+        <!-- 7. Contact Section -->
+        <section class="py-24 px-8 bg-surf-bot" id="contact">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                    <!-- Info + canales -->
+                    <div>
+                        <span class="badge block mb-4" data-i18n="contact_badge">Contacto</span>
+                        <h2 class="text-4xl md:text-5xl font-head font-black tracking-tighter uppercase mb-6" data-i18n="contact_title">Hablemos de tu proyecto</h2>
+                        <p class="text-on-surf-var text-lg mb-12" data-i18n="contact_desc">Contanos tu idea y te respondemos en menos de 24 horas con una propuesta sin compromiso.</p>
+                        <div class="space-y-4">
+                            <a href="https://wa.me/5491124698925" target="_blank" rel="noopener noreferrer"
+                                class="flex items-center gap-4 p-5 bg-surf-low rounded-lg border border-out-var/10 hover:border-primary/40 transition-all group">
+                                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.489-1.761-1.663-2.06-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                                </div>
+                                <div>
+                                    <p class="font-head font-bold text-sm group-hover:text-primary transition-colors">WhatsApp</p>
+                                    <p class="font-label text-xs text-on-surf-var">+54 9 11 2469-8925</p>
+                                </div>
+                            </a>
+                            <a href="mailto:agencia.pulse6@gmail.com"
+                                class="flex items-center gap-4 p-5 bg-surf-low rounded-lg border border-out-var/10 hover:border-primary/40 transition-all group">
+                                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+                                </div>
+                                <div>
+                                    <p class="font-head font-bold text-sm group-hover:text-primary transition-colors">Email</p>
+                                    <p class="font-label text-xs text-on-surf-var">agencia.pulse6@gmail.com</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Formulario — registrate en formspree.io y reemplazá XXXXXXXX por tu form ID -->
+                    <form action="https://formspree.io/f/XXXXXXXX" method="POST" class="space-y-6">
+                        <div>
+                            <label class="font-label text-[10px] uppercase tracking-widest text-on-surf-var mb-2 block" data-i18n="contact_name">Nombre</label>
+                            <input type="text" name="name" required placeholder="Tu nombre completo"
+                                class="w-full bg-surf-low border border-out-var/20 rounded-md px-4 py-3 text-sm font-body text-on-surf placeholder:text-on-surf-var/40 focus:outline-none focus:border-primary/60 transition-colors">
+                        </div>
+                        <div>
+                            <label class="font-label text-[10px] uppercase tracking-widest text-on-surf-var mb-2 block" data-i18n="contact_email_lbl">Email</label>
+                            <input type="email" name="email" required placeholder="tu@email.com"
+                                class="w-full bg-surf-low border border-out-var/20 rounded-md px-4 py-3 text-sm font-body text-on-surf placeholder:text-on-surf-var/40 focus:outline-none focus:border-primary/60 transition-colors">
+                        </div>
+                        <div>
+                            <label class="font-label text-[10px] uppercase tracking-widest text-on-surf-var mb-2 block" data-i18n="contact_msg">Mensaje</label>
+                            <textarea name="message" rows="5" required placeholder="Contanos tu idea o proyecto..."
+                                class="w-full bg-surf-low border border-out-var/20 rounded-md px-4 py-3 text-sm font-body text-on-surf placeholder:text-on-surf-var/40 focus:outline-none focus:border-primary/60 transition-colors resize-none"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full kin-grad text-on-prim-box py-4 rounded-md font-head font-bold uppercase text-sm tracking-widest hover:shadow-[0_0_30px_rgba(255,107,0,0.25)] transition-all" data-i18n="contact_send">Enviar mensaje</button>
+                        <p class="text-center font-label text-[10px] text-on-surf-var/50 uppercase tracking-widest" data-i18n="contact_note">Te respondemos en menos de 24 horas</p>
+                    </form>
                 </div>
             </div>
         </section>
@@ -665,13 +769,14 @@
                         <li><a class="ft-lnk" href="#work" data-i18n="nav_work">Trabajo</a></li>
                         <li><a class="ft-lnk" href="#about" data-i18n="nav_about">Nosotros</a></li>
                         <li><a class="ft-lnk" href="#faq" data-i18n="nav_faq">Preguntas</a></li>
+                        <li><a class="ft-lnk" href="#contact" data-i18n="nav_contact">Contacto</a></li>
                     </ul>
                 </div>
                 <div>
                     <h5 class="font-label text-[10px] text-primary uppercase tracking-[0.2em] mb-6"
                         data-i18n="footer_social">Social</h5>
                     <ul class="space-y-4">
-                        <li><a class="ft-lnk" href="https://www.instagram.com/agenciapulse_/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a class="ft-lnk" href="https://www.instagram.com/agenciapulse__/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
                         <li><a class="ft-lnk" href="https://wa.me/5491124698925" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
                         <li><a class="ft-lnk" href="mailto:agencia.pulse6@gmail.com">Gmail</a></li>
                     </ul>
@@ -717,6 +822,7 @@
                 nav_faq: "Preguntas",
                 nav_lang_es: "ES (Español)",
                 nav_lang_en: "EN (Inglés)",
+                nav_contact: "Contacto",
                 nav_cta: "Hablemos",
                 hero_badge: "Disponibilidad Inmediata",
                 hero_title: "Diseño y Desarrollo que <span class=\"text-prim-box\">Multiplica</span> tu Impacto",
@@ -778,6 +884,10 @@
                 faq_2_a: "Sí, ofrecemos planes integrales de mantenimiento, seguridad, backups y actualización de contenidos para que te enfoques únicamente en tu negocio.",
                 faq_3_q: "¿Trabajan con clientes internacionales?",
                 faq_3_a: "Por supuesto. Operamos de manera 100% remota con empresas de Europa y toda América, asegurando comunicación fluida. También ofrecemos reuniones presenciales en Buenos Aires.",
+                faq_4_q: "¿Cuánto cuesta aproximadamente un sitio web?",
+                faq_4_a: "El costo varía según la complejidad del proyecto. Una Landing Page parte desde un precio accesible y los planes más completos escalan según el alcance. Lo mejor es que nos cuentes tu idea para darte una cotización personalizada sin compromiso. Escribinos por WhatsApp y te respondemos en el día.",
+                faq_5_q: "¿Cómo es el proceso de pago y puedo ver el avance?",
+                faq_5_a: "El pago se divide en dos partes: un 50% de seña para arrancar el proyecto y el 50% restante contra entrega final. Durante todo el desarrollo tenés acceso a revisiones periódicas y te vamos informando el avance por WhatsApp. Nada se publica sin tu aprobación.",
                 footer_desc: "Ingeniería y diseño para marcas que buscan liderar. Hacemos que lo complejo parezca simple.",
                 footer_explore: "Navegación",
                 footer_social: "Conecta",
@@ -787,7 +897,15 @@
                 addon_badge: "Servicio Complementario",
                 addon_title: "Edición de Video y Fotografía",
                 addon_desc: "Potencia el impacto visual de tu proyecto con contenido multimedia profesional. Incrementa el valor de tu marca (requiere cotización adicional).",
-                addon_cta: "Quiero este plan →"
+                addon_cta: "Quiero este plan →",
+                contact_badge: "Contacto",
+                contact_title: "Hablemos de tu proyecto",
+                contact_desc: "Contános tu idea y te respondemos en menos de 24 horas con una propuesta sin compromiso.",
+                contact_name: "Nombre",
+                contact_email_lbl: "Email",
+                contact_msg: "Mensaje",
+                contact_send: "Enviar mensaje",
+                contact_note: "Te respondemos en menos de 24 horas"
             },
             en: {
                 nav_services: "Services",
@@ -797,6 +915,7 @@
                 nav_faq: "FAQ",
                 nav_lang_es: "ES (Spanish)",
                 nav_lang_en: "EN (English)",
+                nav_contact: "Contact",
                 nav_cta: "Let's Talk",
                 hero_badge: "Available for new projects",
                 hero_title: "Design & Development that <span class=\"text-prim-box\">Multiplies</span> your Impact",
@@ -858,6 +977,10 @@
                 faq_2_a: "Yes, we offer comprehensive maintenance, security, backup, and content update plans so you can focus solely on your business.",
                 faq_3_q: "Do you work with international clients?",
                 faq_3_a: "Absolutely. We operate 100% remotely with companies in Europe and across the Americas, ensuring seamless communication. In-person meetings in Buenos Aires are also available.",
+                faq_4_q: "How much does a website approximately cost?",
+                faq_4_a: "The cost varies depending on the project's complexity. A Landing Page starts at an accessible price, and more complete plans scale according to scope. The best option is to tell us your idea so we can give you a personalized quote with no commitment. Message us on WhatsApp and we'll reply same day.",
+                faq_5_q: "How does payment work and can I see the progress?",
+                faq_5_a: "Payment is split in two: a 50% deposit to kick off the project and the remaining 50% upon final delivery. Throughout development you'll receive periodic progress updates via WhatsApp. Nothing goes live without your approval.",
                 footer_desc: "Engineering and design for brands aiming to lead. We make the complex look simple.",
                 footer_explore: "Navigation",
                 footer_social: "Connect",
@@ -867,7 +990,15 @@
                 addon_badge: "Complementary Service",
                 addon_title: "Video & Photo Editing",
                 addon_desc: "Boost your project's visual impact with professional multimedia content. Increases your brand's perceived value (requires additional quoting).",
-                addon_cta: "I want this plan →"
+                addon_cta: "I want this plan →",
+                contact_badge: "Contact",
+                contact_title: "Let's Talk About Your Project",
+                contact_desc: "Tell us your idea and we'll get back to you within 24 hours with a no-commitment proposal.",
+                contact_name: "Name",
+                contact_email_lbl: "Email",
+                contact_msg: "Message",
+                contact_send: "Send message",
+                contact_note: "We'll reply within 24 hours"
             }
         };
 
